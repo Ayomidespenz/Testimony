@@ -52,6 +52,7 @@ h3{
     width: 80%;
     border-radius: 10px;
     padding: 20px 10px 20px 20px;
+    color: white;
 
 }
 .daniel h2{
@@ -204,21 +205,62 @@ h4{
 @media screen  and (max-width: 768px) {
     .container{
         width: 100%;
+        /* border: 2px solid green; */
         display: flex;
         flex-direction: column;
+        align-content: center;
+        padding: 20px;
     }
     .sub{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        /* border: 2px solid yellow; */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     }
     .sub2{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .daniel{
         background-image: none;
+        width: 100%;
+        /* border: 2px solid red; */
+        margin-bottom: 20px;
     }
     .img2{
         width: 100%;
+    }
+    .jonathan{
+        width: 100%;
+        margin-left: -0%;
+        margin-bottom: 20px;
+    }
+    .harmon{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abrams{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abrams p{
+        margin-top: 20px;
+    }
+    .contain{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cont{
+        margin: 0;
+    }
+    .daniel h2{
+        font-size: 20px;
+    }
+    .daniel p{
+        font-size: 14px;
     }
 }
