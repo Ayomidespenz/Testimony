@@ -9,11 +9,23 @@ body{
 .main{
     margin:10px auto;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    background-color:hsl(0, 0%, 81%) ;
+    width: 100%;
+}
+.cont{
+    margin-left: 70px;
+    justify-content: space-evenly;
 }
 .sub{
    display: flex; 
-   width: 70%;
+   width: 90%;
    margin: 5px;
+   justify-content: space-evenly;
    
 }
 h3{
@@ -35,19 +47,19 @@ h3{
     background-image: url(/images/bg-pattern-quotation.svg);
    background-repeat: no-repeat;
    background-color:hsl(263, 55%, 52%) ;
-    border: 2px solid red;
-    background-position-x: right;
-    width: 50%;
+    /* border: 2px solid red; */
+    background-position:80% 1% ;
+    width: 80%;
     border-radius: 10px;
     padding: 20px 10px 20px 20px;
 
 }
 .daniel h2{
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
 }
 .daniel p{
-    font-size: 11px;
+    font-size: 13px;
     margin-top: 30px;
 }
 .sub1 img{
@@ -58,13 +70,42 @@ h3{
 }
 .img2{
     display: flex;
+    /* border: 2px solid red; */
 }
+.img1 img{
+    border: 2px solid purple;
+}
+.img1{
+    display: flex;
+    /* border: 2px solid rgb(0, 255, 34); */
+    margin-left: 6px;
+}
+.img1 p{
+    /* margin-top: -5px; */
+    margin-left: -50%;
+    font-size: 14px;
+    color: white;
+}
+
 .jonathan{
     background-color: hsl(224, 10%, 45%);
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
     padding: 20px;
     color: white;
+    margin-left: 40px;
+}
+h2{
+    font-family: Barlow Semi Condensed;
+}
+p{
+    font-family: Barlow Semi Condensed;
+}
+h3{
+    font-family: Barlow Semi Condensed;
+}
+h4{
+    font-family: Barlow Semi Condensed;
 }
 .jonathan h2{
     margin-top: 20px;
@@ -73,19 +114,32 @@ h3{
 .jonathan p{
     font-size: 14px;
     font-weight: 150px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .sub2{
     display: flex; 
-   width: 70%;
+   width: 90%;
    margin: 5px;
+   margin-top: 20px;
+   justify-content: space-evenly;
 }
 .harmon{
     background-color: white;
     color: black;
-    border: 2px solid yellow;
-    width: 30%;
+    /* border: 2px solid yellow; */
+    width: 40%;
     border-radius: 5px;
+    padding: 20px;
+    margin-right: 40px;
+}
+.harmon h2{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.harmon p{
+    font-size: 14px;
+    /* margin-top: 20px; */
 }
 .harmon img{
     margin-top: 15px;
@@ -93,11 +147,78 @@ h3{
 .harmon h3{
     color: black;
     margin-top: 20px;
+    font-size: 16px;
 }
 
 .abrams{
     background-color: hsl(219, 29%, 14%);
     color: white;
-    width: 50%;
+    width: 80%;
     border-radius: 5px;
+    padding: 20px;
+}
+.abrams h2{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.abrams p{
+    font-size: 12px;
+    line-height: 18px;
+}
+.abrams img{
+    margin-left: -5px;
+    margin-top: -25px;
+    border: 2px solid purple;
+}
+.contain{
+    width: 70%;
+    padding: 5px;
+    color: black;
+    margin-right: 80px;
+    background-color: white;
+    /* border: 3px solid green; */
+}
+.img3{
+    display: flex;
+    margin-top: 20px;
+}
+.img3 img{
+    border-radius: 50%;
+}
+.contain h2{
+    margin-top: 20px;
+
+}
+.contain p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.contain h3{
+    color: black;
+}
+.hey{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+@media screen  and (max-width: 768px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub2{
+        display: flex;
+        flex-direction: column;
+    }
+    .daniel{
+        background-image: none;
+    }
+    .img2{
+        width: 100%;
+    }
 }
